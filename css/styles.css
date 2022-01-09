@@ -1,0 +1,353 @@
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #212121;
+  --main-text-color: #757575;
+  --light-color: #fff;
+  --accent-color: #2196f3;
+  --active-accent-color: #188ce8;
+  --beckground-color: #2f303a;
+  --text-color: #000000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+img {
+  display: block;
+  width: 100;
+  height: auto;
+}
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+/*-----------------header-----------------------------*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header .logo {
+  margin-right: 93px;
+}
+
+.heder-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-list {
+  color: var(--dark-color);
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contact-item {
+  margin-right: 50px;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-link:hover,
+.header-link:focus,
+.current-link {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  display: block;
+}
+.header-logo {
+  color: var(--text-color);
+}
+/* ----------------HERO ---main-section----Замовити послугу-------------*/
+.hero-section {
+  display: block;
+  background-color: var(--beckground-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hiro-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-color);
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.hiro-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  border: none;
+}
+
+.hiro-btn:active,
+.hiro-btn:hover {
+  background-color: var(--active-accent-color);
+}
+
+/*----------------------FEATUREs-----Особливості--------------------------------*/
+.features {
+  padding-bottom: 0px;
+}
+
+.features-item {
+  width: calc(100% / 4 - 30px);
+}
+
+.features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  margin-bottom: 10px;
+}
+/*-----------------------SECTION TITLE-----Чим ми займаємось---------------------------*/
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+  margin-bottom: 52px;
+}
+
+.work-item {
+  width: calc(100% / 3 - 30px);
+}
+
+/*-----------------------about--------наша команда------------------------*/
+.about {
+  background: #f5f4fa;
+  text-align: center;
+  border-top: 94px;
+}
+
+.about-item {
+  width: calc(100% / 4 - 30px);
+  background-color: var(--light-color);
+}
+
+.about-item-title {
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-bottom: 10px;
+}
+
+.about-after-title,
+.about-item-title {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.about-wrapper {
+  padding: 30px;
+}
+/*-----------------------------FOOTER-------------------------*/
+
+.footer {
+  background-color: var(--beckground-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 20px;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.footer-item-link[target='_blank'] {
+  color: var(--light-color);
+}
+
+.footer-item-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-item-link:hover,
+.footer-item-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-logo {
+  color: var(--light-color);
+}
+
+/*------------------------PORTFOLIO---------------------------*/
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 114px;
+}
+.portfolio-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #212121;
+  background-color: #f5f4fa;
+  border: none;
+}
+
+.portfolio-button-item:not(:last-of-type) {
+  margin-left: 8px;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus,
+.portfolio-current-button {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+/*------------------------PROJECTS------------------------------*/
+.projects-item {
+  width: calc(100% / 3 - 30px);
+}
+.projects-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--dark-color);
+  margin-bottom: 4px;
+}
+.projects-after-title {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.projects-wrapper {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
