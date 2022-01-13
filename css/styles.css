@@ -161,6 +161,17 @@ button {
   padding-bottom: 200px;
 }
 
+.overlay {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .hiro-title {
   font-weight: 900;
   font-size: 44px;
@@ -201,7 +212,7 @@ button {
 }
 
 /*----------------------FEATUREs-----Особливості--------------------------------*/
-.features {
+.feature {
   padding-bottom: 0px;
 }
 
@@ -217,6 +228,25 @@ button {
   color: var(--dark-color);
   margin-bottom: 10px;
 }
+.features-group-list {
+  display: flex;
+  justify-content: center;
+}
+
+.features-group-item {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-group-item + .features-group-item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 /*-----------------------SECTION TITLE-----Чим ми займаємось---------------------------*/
 .section-title {
   font-size: 36px;
@@ -253,10 +283,81 @@ button {
 .about-item-title {
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
 }
 
 .about-wrapper {
   padding: 30px;
+}
+
+.about-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.about-social-item + .about-social-item {
+  margin-left: 10px;
+}
+.about-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.about-social-icon {
+  fill: currentColor;
+}
+
+.about-social-link:hover,
+.about-social-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+/*--------------------------Постійні клієнти----------------------*/
+.Regular-customer-container {
+  width: 1170px;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.regular-customer-item {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.regular-customer-link {
+  width: 170px;
+  height: 92px;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+.regular-customer-icon {
+  fill: currentColor;
+  display: block;
+}
+.regular-customer-icon:hover,
+.regular-customer-icon:focus {
+  color: var(--accent-color);
+}
+
+.regular-customer-item:hover,
+.regular-customer-item:focus {
+  border-color: var(--accent-color);
+}
+.regular-customer-item {
+  width: calc(100% / 6 - 30px);
+}
+.regular-customer-item:not(:last-of-type) {
+  margin-left: 30px;
 }
 /*-----------------------------FOOTER-------------------------*/
 
@@ -290,6 +391,50 @@ button {
 
 .footer-logo {
   color: var(--light-color);
+}
+/*-------------*/
+.container-footer {
+}
+
+.footer-social-title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.14;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--light-color);
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: #44454e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 /*------------------------PORTFOLIO---------------------------*/
