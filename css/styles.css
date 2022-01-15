@@ -40,7 +40,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  outline: 2px solid gold;
 }
 img {
   display: block;
@@ -153,6 +153,40 @@ button {
 .header-logo {
   color: var(--text-color);
 }
+
+.header-contacts-container {
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+}
+
+.header-contacts-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contakt-item {
+  margin-left: 10px;
+}
+
+.contakt-icon-link {
+  width: 16px;
+  height: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #757575;
+}
+
+.contact-icon {
+  fill: currentColor;
+  display: block;
+}
+.contakt-icon:hover,
+.contakt-icon:focus {
+  color: var(--accent-color);
+}
 /* ----------------HERO ---main-section----Замовити послугу-------------*/
 .hero-section {
   display: block;
@@ -210,7 +244,6 @@ button {
 .hiro-btn:hover {
   background-color: var(--active-accent-color);
 }
-
 /*----------------------FEATUREs-----Особливості--------------------------------*/
 .feature {
   padding-bottom: 0px;
@@ -396,7 +429,9 @@ button {
 .container-footer {
   display: flex;
   align-items: baseline;
-  justify-content: center;
+}
+.footer-social-container {
+  margin-left: 70px;
 }
 
 .footer-social-title {
