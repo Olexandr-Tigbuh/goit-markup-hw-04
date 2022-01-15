@@ -154,12 +154,6 @@ button {
   color: var(--text-color);
 }
 
-.header-contacts-container {
-  display: flex;
-  align-items: baseline;
-  margin-left: auto;
-}
-
 .header-contacts-list {
   display: flex;
   justify-content: center;
