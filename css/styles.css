@@ -133,6 +133,7 @@ button {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
 }
 
 .header-link:hover,
@@ -159,23 +160,15 @@ button {
   justify-content: center;
   align-items: center;
 }
-
 .contakt-item {
-  margin-left: 10px;
+  margin-left: 30px;
 }
-
-.contakt-icon-link {
-  width: 16px;
-  height: 12;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #757575;
-}
-
 .contact-icon {
+  width: 16px;
+  height: 12px;
   fill: currentColor;
   display: block;
+  margin-right: 10px;
 }
 .contakt-icon:hover,
 .contakt-icon:focus {
