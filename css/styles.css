@@ -134,6 +134,7 @@ button {
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
+  align-items: center;
 }
 
 .header-link:hover,
@@ -180,6 +181,7 @@ button {
   background-color: var(--beckground-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .overlay {
@@ -225,6 +227,7 @@ button {
   margin-right: auto;
   padding: 10px 32px;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hiro-btn:active,
@@ -291,6 +294,8 @@ button {
 .about-item {
   width: calc(100% / 4 - 30px);
   background-color: var(--light-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .about-item-title {
@@ -321,7 +326,7 @@ button {
 .about-social-link {
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
+  background-color: var(--light-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,7 +455,7 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--light-color);
 }
 
 .footer-social-icon {
@@ -460,7 +465,7 @@ button {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--light-color);
 }
 
 /*------------------------PORTFOLIO---------------------------*/
@@ -503,6 +508,7 @@ button {
 /*------------------------PROJECTS------------------------------*/
 .projects-item {
   width: calc(100% / 3 - 30px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .projects-title {
   font-size: 18px;
