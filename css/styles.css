@@ -5,7 +5,9 @@ html {
 :root {
   --dark-color: #212121;
   --main-text-color: #757575;
+  --social-grey-color: #afb1b8;
   --light-color: #fff;
+  --lighter-color: #f5f4fa;
   --accent-color: #2196f3;
   --active-accent-color: #188ce8;
   --beckground-color: #2f303a;
@@ -89,11 +91,6 @@ button {
   margin-top: -30px;
 }
 /*-----------------header-----------------------------*/
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
 .header .logo {
   margin-right: 93px;
 }
@@ -120,6 +117,7 @@ button {
   display: flex;
   align-items: center;
   margin-left: auto;
+  justify-content: center;
 }
 
 .contact-item {
@@ -152,21 +150,16 @@ button {
   color: var(--accent-color);
   display: block;
 }
+
 .header-logo {
   color: var(--text-color);
 }
 
-.header-contacts-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .contakt-item {
   margin-left: 30px;
 }
+
 .contact-icon {
-  width: 16px;
-  height: 12px;
   fill: currentColor;
   display: block;
   margin-right: 10px;
@@ -217,7 +210,6 @@ button {
   line-height: 1.87;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--light-color);
   background: var(--accent-color);
@@ -235,7 +227,7 @@ button {
   background-color: var(--active-accent-color);
 }
 /*----------------------FEATUREs-----Особливості--------------------------------*/
-.feature {
+.features {
   padding-bottom: 0px;
 }
 
@@ -257,16 +249,11 @@ button {
 }
 
 .features-group-item {
-  width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--lighter-color);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.features-group-item + .features-group-item {
-  margin-left: 30px;
   margin-bottom: 30px;
 }
 
@@ -286,9 +273,8 @@ button {
 
 /*-----------------------about--------наша команда------------------------*/
 .about {
-  background: #f5f4fa;
+  background: var(--lighter-color);
   text-align: center;
-  border-top: 94px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -307,26 +293,26 @@ button {
   margin-bottom: 10px;
 }
 
+.about-after-title {
+  margin-bottom: 16px;
+}
+
 .about-after-title,
 .about-item-title {
   font-size: 16px;
   line-height: 1.18;
-  margin-bottom: 16px;
 }
 
 .about-wrapper {
   padding: 30px;
 }
 
-.about-social-list {
+.social-list {
   display: flex;
   justify-content: center;
 }
 
-.about-social-item + .about-social-item {
-  margin-left: 10px;
-}
-.about-social-link {
+.social-link {
   width: 44px;
   height: 44px;
   background-color: var(--light-color);
@@ -334,43 +320,35 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--social-grey-color);
 }
 
-.about-social-icon {
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
   fill: currentColor;
 }
 
-.about-social-link:hover,
-.about-social-link:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--light-color);
 }
 /*--------------------------Постійні клієнти----------------------*/
-.Regular-customer-container {
-  width: 1170px;
+.regular-customer-link {
+  background-color: var(--light-color);
+  display: flex;
   justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-.regular-customer-item {
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
+  align-items: center;
+  color: var(--social-grey-color);
+  border: 1px solid var(--social-grey-color);
   border-radius: 4px;
   padding: 16px 32px;
 }
-
-.regular-customer-link {
-  width: 170px;
-  height: 92px;
-  background-color: #ffffff;
-  justify-content: center;
-  align-items: center;
-  color: #afb1b8;
-}
 .regular-customer-icon {
   fill: currentColor;
-  display: block;
 }
 .regular-customer-icon:hover,
 .regular-customer-icon:focus {
@@ -383,9 +361,6 @@ button {
 }
 .regular-customer-item {
   width: calc(100% / 6 - 30px);
-}
-.regular-customer-item:not(:last-of-type) {
-  margin-left: 30px;
 }
 /*-----------------------------FOOTER-------------------------*/
 
@@ -423,6 +398,10 @@ button {
 .footer-logo {
   color: var(--light-color);
 }
+
+.footer-cont-item:not(:last-child) {
+  margin-right: 90px;
+}
 /*-------------*/
 .container-footer {
   display: flex;
@@ -434,51 +413,24 @@ button {
 
 .footer-social-title {
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.14;
+  line-height: 1.14;
   font-weight: bold;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--light-color);
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.footer-social-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
-.footer-social-link {
-  width: 44px;
-  height: 44px;
-  background-color: #44454e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+.footer .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--light-color);
 }
 
-.footer-social-icon {
-  fill: currentColor;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: var(--accent-color);
-  color: var(--light-color);
 }
-
 /*------------------------PORTFOLIO---------------------------*/
-.portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 114px;
-}
 .portfolio-button {
   font-family: Roboto;
   font-style: normal;
@@ -490,13 +442,13 @@ button {
   padding: 6px 22px;
   border-radius: 4px;
   cursor: pointer;
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--dark-color);
+  background-color: var(--lighter-color);
   border: none;
 }
 
 .portfolio-button-item:not(:last-of-type) {
-  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .portfolio-button:hover,
@@ -504,6 +456,8 @@ button {
 .portfolio-current-button {
   color: var(--light-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-button-list {
@@ -514,7 +468,6 @@ button {
 /*------------------------PROJECTS------------------------------*/
 .projects-item {
   width: calc(100% / 3 - 30px);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .projects-title {
   font-size: 18px;
@@ -533,4 +486,14 @@ button {
 .projects-wrapper {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+.projects-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
